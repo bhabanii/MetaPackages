@@ -27,7 +27,7 @@ namespace Microsoft.AspNetCore
         /// </summary>
         /// <param name="app">A delegate that handles requests to the application.</param>
         /// <returns>A started <see cref="IWebHost"/> that hosts the application.</returns>
-        public static IWebHost Start(RequestDelegate app) =>
+        public static IWebHost Start(RequestDelegate appg) =>
             Start(url: null, app: app);
 
         /// <summary>
