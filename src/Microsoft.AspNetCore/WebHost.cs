@@ -211,8 +211,10 @@ namespace Microsoft.AspNetCore
 
                     services.AddTransient<IStartupFilter, HostFilteringStartupFilter>();
                 })
-                .UseIIS()
+                
                 .UseIISIntegration()
+                .UseIIS()
+                
                 .UseDefaultServiceProvider((context, options) =>
                 {
                     options.ValidateScopes = context.HostingEnvironment.IsDevelopment();
